@@ -7,4 +7,5 @@ torchtext==0.12.0
 pyannote.audio==2.0.1
 pydeepspeech==1.1.7
 speechbrain==0.5.12
+pydub
 transformers
