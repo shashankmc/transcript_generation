@@ -5,7 +5,8 @@ from pydub import AudioSegment
 from pydeepspeech import transcribe
 import subprocess
 
-pipeline = Pipeline.from_pretrained('pyannote/speaker-diarization')
+pipeline = Pipeline.from_pretrained('pyannote/speaker-diarization',
+                                    use_auth_token="")
 asr_model = \
 EncoderASR.from_hparams(source="speechbrain/asr-wav2vec2-librispeech",
                         savedir="pretrained_models/asr-wav2vec2-librispeech",
